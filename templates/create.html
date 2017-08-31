@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @font-face {
+          font-family: myFirstFont;
+          src: url({{ url_for('static', filename='humor.ttf') }});
+          }
+          h1{
+            font-family:myFirstFont;
+          }
+    </style>
+</head>
+<body>
+<h1>Make A Bar Chart Or A Pie Chart</h1>
+
+<form action="/graph_theory" method="post">
+
+  <select name="gtype">
+  <option value="pie">Pie Chart</option>
+  <option value="bar">Bar Chart</option>
+  </select><br><br>
+
+  Title of Graph:<br>
+  <input type="text" name="title" value="Population Distribution">
+  <br><br>
+
+  x-axis label: <br>
+  <input type="text" name="xlabel" value="Half">
+  <br><br>
+
+  y-axis label:<br>
+  <input type="text" name="ylabel" value="Percentage (%)">
+  <br><br>
+
+  Enter category and value<br>
+  <input type="text" name="tick1" value="First Half">
+  <input type="text" name="val1" value="50">
+  <br><br>
+
+  <input type="text" name="tick2" value="Second Half">
+  <input type="text" name="val2" value="50">
+  <br><br>
+
+  <input type="text" name="tick3" value="">
+  <input type="text" name="val3" value="">
+  <br><br>
+
+  <input type="text" name="tick4" value="">
+  <input type="text" name="val4" value="">
+  <br><br>
+
+  <input type="text" name="tick5" value="">
+  <input type="text" name="val5" value="">
+  <br><br>
+
+  <input type="text" name="tick6" value="">
+  <input type="text" name="val6" value="">
+  <br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
