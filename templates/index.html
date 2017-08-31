@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        @font-face {
+          font-family: myFirstFont;
+          src: url({{ url_for('static', filename='humor.ttf') }});
+          }
+          h1, h2 {
+            font-family:myFirstFont;
+          }
+
+          h1 {
+            font-size:50px;
+          }
+
+          h2 {
+            font-size:30px;
+          }
+          a {
+            text-decoration:none;
+            color: blue;
+          }
+
+
+          a:hover {
+            color:red;
+          }
+    </style>
+</head>
+<body>
+<center><h1 href="/">KGP GRAPH THEORY</h1></center><br><br><br>
+<center><a href="/barpie"><h2>1. BAR/PIE CHART</h2></a></center>
+<center><a href="/"><h2>2. LINE GRAPH</h2></a></center></body>
+</html>

@@ -4,9 +4,12 @@ import random
 
 app = Flask(__name__)
 
-@app.route('/create')
+@app.route('/')
+def home():
+    return render_template('index.html')
+@app.route('/barpie')
 def create_page():
-    return render_template('create.html')
+    return render_template('barpie.html')
 
 @app.route('/graph_theory', methods = ['GET','POST'])
 def hello_world():
