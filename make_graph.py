@@ -50,4 +50,5 @@ def render_graph(data, name_img):
 
     plt.title(data['title'])
 
-    plt.savefig('static/{}'.format(name_img))
+    plt.savefig('static/{}'.format(name_img), bbox_inches='tight')
+    plt.close()
