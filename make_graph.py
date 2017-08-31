@@ -26,8 +26,6 @@ def render_graph(data, name_img):
     left_values = [quanta + i*2*quanta for i in range(0, number_of_bars)]
     tick_values = [quanta + i*2*quanta for i in range(0, number_of_bars)]
 
-    print left_values
-
     fig = plt.figure()
     ax = fig.add_subplot(1, 1, 1)
 
