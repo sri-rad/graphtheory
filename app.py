@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for, request
 from make_graph import render_graph
-import time
+import random
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def create_page():
 @app.route('/graph_theory', methods = ['GET','POST'])
 def hello_world():
     data = request.form
-    img_name = 'graph' + str(time.time())+'.png'
+    img_name = 'graph' + str(random.randint(0, 20))+'.png'
     render_graph(data, img_name)
     return render_template('graph.html', data = {'name': img_name})
 
