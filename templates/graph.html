@@ -6,13 +6,15 @@
           font-family: myFirstFont;
           src: url({{ url_for('static', filename='humor.ttf') }});
           }
-          h1{
+          h1, a{
+            font-size:50px;
+            text-decoration:none;
             font-family:myFirstFont;
           }
     </style>
 </head>
 <body>
-<center><h1>KGP GRAPH THEORY</h1></center>
+<center><a href="/">KGP GRAPH THEORY</a></center>
 <center><img src="{{ url_for('static', filename=data['name']) }}"></center>
 </body>
 </html>

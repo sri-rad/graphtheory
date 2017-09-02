@@ -6,11 +6,11 @@
           font-family: myFirstFont;
           src: url({{ url_for('static', filename='humor.ttf') }});
           }
-          h1, h2 {
+          h1, h2, a {
             font-family:myFirstFont;
           }
 
-          h1 {
+          #title {
             font-size:50px;
           }
 
@@ -29,7 +29,7 @@
     </style>
 </head>
 <body>
-<center><h1 href="/">KGP GRAPH THEORY</h1></center><br><br><br>
+<center><a id="title" href="/">KGP GRAPH THEORY</a></center><br><br><br>
 <center><a href="/barpie"><h2>1. BAR/PIE CHART</h2></a></center>
-<center><a href="/"><h2>2. LINE GRAPH</h2></a></center></body>
+<center><a href="/stackbar"><h2>2. STACKED BAR CHART</h2></a></center></body>
 </html>
