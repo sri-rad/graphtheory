@@ -5,7 +5,6 @@ import numpy as np
 
 def render_graph(data, name_img):
     plt.xkcd()
-
     graph_type = data['gtype']
 
     if graph_type == 'bar' or graph_type == 'pie':
@@ -64,11 +63,10 @@ def render_graph(data, name_img):
                 categories.append(data[tick_field])
 
         stacks = np.array(stacks).transpose()
-        print('soln', stacks)
 
         N = len(stacks[0])
-        ind = np.arange(N)  # the x locations for the groups
-        width = 0.6  # the width of the bars: can also be len(x) sequence
+        ind = np.arange(N)
+        width = 0.6
 
         pstacks = []
         for stack in stacks:
