@@ -1,6 +1,6 @@
 ## Graph Theory
 
-Webapp generate graphs in the style of xkcd.
+Webapp generates graphs in the style of xkcd but with color.
 
 Here's a graph thus generated:
 
